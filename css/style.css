@@ -75,7 +75,128 @@ nav ul li a:hover {
 .banner h1 {
     color: var(--white);
     font-family: var(--fraunces);
-    font-weight: 370;
+    font-weight: 400;
     font-size: 4rem;
 
+}
+
+/* INFO */
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    text-align: center;
+
+}
+
+
+.info div {
+    width: 50vw;
+    background-color: var(--white);
+}
+
+div[class="info white"] h2 {
+    color: var(--lightBrown);
+    font-family: var(--fraunces);
+    padding-bottom: 1rem;
+}
+
+div[class="info white"] {
+    font-family: var(--lato);
+    line-height: 2.5rem;
+}
+
+.info:nth-child(2) {
+    background: url("../img/parallax-imagem2.jpg") center/cover fixed;
+}
+
+.info:nth-child(4) {
+    background: url("../img/parallax-imagem3.jpg") center/cover fixed;
+}
+
+.info:nth-child(2) h3,
+.info:nth-child(4) h3 {
+    background-color: var(--lightBrown);
+    font-family: var(--fraunces);
+    font-style: italic;
+    padding: 1rem 5rem;
+    color: white;
+}
+
+/* CONTATOS E ENDEREÇO */
+
+#contatos {
+    background: url("../img/parallax-imagem4.png") fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--lato);
+}
+
+#contatos h2,
+#contatos p {
+    color: var(--white);
+    background: var(--mediumBrown);
+    text-align: center;
+    padding: .5rem;
+
+}
+
+#contatos iframe {
+    margin: 2.5rem 0;
+}
+
+/* HORARIO DE FUNCIONAMENTO */
+
+
+#horario {
+    background: url("../img/cafeteria.jpg") fixed center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    font-family: var(--lato);
+}
+
+#horario h2 {
+    text-align: center;
+    letter-spacing: .3rem;
+    margin-bottom: 6rem;
+}
+
+#horario ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#horario ul li {
+    width: 50vw;
+}
+
+#horario h3 {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#horario h3 span {
+    position: relative;
+    margin-left: 10px;
+}
+
+#horario h3 span::before {
+    content: '';
+    flex-grow: 1;
+    border-bottom: 1px dotted var(--grey);
+    margin: 0 10px;
+}
+footer {
+    background-color: var(--darkBrown);
+    text-align: center;
+    color: var(--white);
 }
