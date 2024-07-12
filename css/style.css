@@ -176,6 +176,16 @@ div[class="info white"] {
 
 #horario ul li {
     width: 50vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#horario .linha {
+    content: "";
+    flex-grow: 1;
+    border-bottom: 2px dotted var(--grey);
+    margin: 0 10px;
 }
 
 #horario h3 {
@@ -192,7 +202,7 @@ div[class="info white"] {
 #horario h3 span::before {
     content: '';
     flex-grow: 1;
-    border-bottom: 1px dotted var(--grey);
+    border-bottom: 2px dotted var(--grey);
     margin: 0 10px;
 }
 footer {
